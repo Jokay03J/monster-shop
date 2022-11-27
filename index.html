@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monster</title>
+    <script type="module" crossorigin src="/assets/index.22084c3c.js"></script>
+    <link rel="stylesheet" href="/assets/index.78189f0a.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="btn-menu">
+          <img src="/assets/menu.65a4dcec.svg" alt="menu btn" />
+        </button>
+        <div id="container">
+          <img src="/assets/x-circle.755c1efa.svg" alt="close btn" id="btn-close" />
+          <ul>
+            <li class="li_menu">Accueil</li>
+            <li class="li_menu">Notre Boutique</li>
+            <li class="li_menu">Nos Collaborateur</li>
+            <li class="li_menu">Nos Contacts</li>
+            <li class="li_menu">Nous Soutenir</li>
+          </ul>
+        </div>
+      </nav>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAMKSURBVFhH7ZY9TBRBFMf/swvL3h0fQS98nRHUwpAj4AcIGuFigAZNTCws1NhJYmFrYWlhYWs0xtbOwkrtMAQLjBoTDRgLTaCQ4FdiNITjgB3fm505Du72dvEjNPySl3k3Mzvznzczb05IAluIpcstY1vAtoDIt8C2LXhecVdLCHCt53l+xSYJjUBtIg5Bk5SanPFIP6+B+7AN9h3ULRHhCJSDuxircyzZmLBlS3WFTNVUyDrXkpW2WNeHbSTTq78Op+wWVMdjWFjMQpDP1t4v0NoBpAeAti7VBTNvgPujNuZ/rfgVmpOZXjwaf65/BVNWAIeUScYsuBUCSysSP7MemtIC6f71Qm6eBT5NS1CXPGWGzhN4BpobdmoPSOyT6LzgoaFbIu7Y+PJeYuyuxPSEHwHm6gNg/3GBGscXzThOpfaCCYyAWX0lFS16xYbZKWDuBZCj5WZGqY0icWDIb7txhkRR5BeW/WHDohB6CxKkoHByhs9ByxGaZBV4es+f4MdXVeDaQ9qWPt9n3CpHe6UJFbCqr9/JK6rIwyLoWCBLIp7c8bfCiOC2GDcSS7llVQYRKmCZJgjCWtvuPCzi/HXgxCVdQexJNWmvmFABuYIt5IELse0SCggTCTP4zNxn7RUTKCBZX6dKTrDTz5SbX53BCRBgoOwdSmCX9r27tbceszpmV89aeMw5KOSvBEy8ekuZ0FX+7JRUicZgDiQftnrXogitCTEi+KpGep84DwQx0N3JIyuL25CtHUKOXBby9jvf2E/3C0lXVdJtlZSDJGVNVcfvhvmWUroesZjQ5zjmViG7lFM+J7lmnZQ4Co9vqWoFr7iQj5MSWf08lJsidJeGjx7Snn8jeDv4UPLkLKJwO9g2S6Q/JEPHDmNs8rX+5UPboUqTJc1NYVikIXR4FhCFTE8Xj1RkJENZqbba6rj+OpjIApiLp4dlW6qx5GQbLdWQ1F+VJ9IWbOTcqUF8mJ3D/LfvWKQDyvl+le6cS88vJ7Dm5A6Mv9yQFAL4IwH/kgi56v+yLWCLBQC/ARC8PtD7GjRTAAAAAElFTkSuQmCC" alt="coffee" id="green" />
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAMISURBVFhH7ZXPa9RAFMdfkk02ybZdqkt/uCBVQdSDYkWrPViwVsQWf9Cbhz35D4iloAhVKD34A/8H74seKqiLUHpQURH0Yg8V2ktZsQp22Tab7SbOm8zsbneTTOoPeukHHvMymcz7Zt7MG8klwBYis3bL2BawLSDyKVAUGRyneagsSYC9juN4HZtEuAJtCRMkEsQvOOIQ/fgPOAZt8ORR9iYiuAJh4BBuSU12OxOKu6sl5qZbY25Sl11VkTaMQbsw0Me+FhOaghbTgOKaBRLx0WLDoxA70Q/q6SGQ9AQd41pFMC72Qr6wTp85wwN9MD3zlj0FEyoAlxRJGTLoMQlK6y6sWA75xVHab4xNVIUUMiMgzX8BMqRKyNRVAgV0d+yE/Pef1DfvPqQtEp8aB6tSAaeCaz3aJMJcnIOC7U2pqjGw7TL1gwgUwP9eJY16pyaAE58aA5v8bvl8swh9YQ6KZW9a0SoIT0ECFfhQuvUAimQV5OdZ1gNwfV8XtD6eBqvnAOsB0OMa8/wRCqiw46edu0zbesi2IOkAKM/m6GZ89DVPRSj7D4GBLwklQQqEAsokQBCyz+KgCPP2PdByn1gPwJ50F/OaEQpg+4lyOHONeR6K4p8eDp98Yekb85oJFJBqT9IWC+z6u9fUn8svbxChCQSQ6i0kcMjBvbuZtxEUwSnfvM+82j6o568EzH74TCqhTn37WRZWJ8epj9RvyHZdhtWJG+zJq4wICopyP4VWwoHjR6gQxFRIKsiZx1LMBdgvn9JWmvRqAiakjQhaOXMFjNwT+GV7CrCkF4qr1G8kVABi6HGwSjb1NYxAqh8XwQUgfJ9w5BdZsNj1EBZCmKWhU73M804EpgODYXC8lNAQFIW2WYQrgJztPwav3nxkTx4auRkRHrR+BVAkRzg9CogC2Q84U5ORrFDze9fWYrKvg4ksAMlcGnJ70p2+wRot3ZFiX4UTKQWNXB0ZhPnFJcgv/4A1skGx3lfImdM1lRaw7tQOmHlfK8Vh/JGAf0mEWvV/2RawxQIAfgPnFyY+es3tCQAAAABJRU5ErkJggg==" alt="coffe blue" id="blue" />
+      <h1 id="header__title">L'urine du diable</h1>
+      <p id="header__subtitle">Une boisson qu'elle déchire</p>
+    </header>
+    <main>
+      <div class="card__container">
+        <div src="./assets/monster.jpg" class="card__img"></div>
+        <h2 class="card__title">la base.</h2>
+        <p class="card__description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="card__container">
+        <div src="./assets/monster.jpg" class="card__img"></div>
+        <h2 class="card__title">la base.</h2>
+        <p class="card__description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="card__container">
+        <div src="./assets/monster.jpg" class="card__img"></div>
+        <h2 class="card__title">la base.</h2>
+        <p class="card__description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="card__container">
+        <div src="./assets/monster.jpg" class="card__img"></div>
+        <h2 class="card__title">la base.</h2>
+        <p class="card__description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="card__container">
+        <div src="./assets/monster.jpg" class="card__img"></div>
+        <h2 class="card__title">la base.</h2>
+        <p class="card__description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="card__container">
+        <div src="./assets/monster.jpg" class="card__img"></div>
+        <h2 class="card__title">la base.</h2>
+        <p class="card__description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </main>
+    
+  </body>
+</html>
