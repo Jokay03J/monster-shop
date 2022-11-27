@@ -1,0 +1,13 @@
+nav button img {
+  height: 50px;
+  width: 50px;
+}
+
+nav button {
+  cursor: pointer;
+  height: fit-content;
+  width: fit-content;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
