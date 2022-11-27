@@ -1,13 +1,162 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
 nav button img {
   height: 50px;
   width: 50px;
 }
 
 nav button {
+  margin: 5px;
   cursor: pointer;
   height: fit-content;
   width: fit-content;
   padding: 5px;
   border: none;
   border-radius: 5px;
+}
+
+nav #container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 60vw;
+  height: 100vh;
+  z-index: 99;
+  top: 0px;
+  left: -100%;
+  transition: all ease 0.5s;
+  background-color: white;
+  -webkit-box-shadow: 3px 0px 27px 0px #000000;
+  box-shadow: 3px 0px 27px 0px #000000;
+}
+
+.active {
+  left: 0px !important;
+}
+
+#btn-close {
+  cursor: pointer;
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.li_menu {
+  cursor: pointer;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+header h1 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+header p {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#header__title {
+  font-family: "Franklin Gothic Medium";
+  color: #95d600;
+  text-shadow: rgb(0, 0, 0) 1px 0 4px;
+}
+#header__subtitle {
+  color: red;
+}
+
+#green {
+  width: 64px;
+  height: 64px;
+}
+#blue {
+  display: none;
+  width: 64px;
+  height: 64px;
+}
+
+#green:hover {
+  display: none;
+}
+
+#green:hover + #blue {
+  display: block;
+}
+
+.card__container {
+  position: relative;
+  width: 90%;
+  height: 400px;
+  background-image: url("./assets/monster.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all ease 1s;
+}
+
+.card__title {
+  position: absolute;
+  top: 0%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+}
+
+.card__description {
+  position: absolute;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15px;
+  margin-right: 15px;
+  top: 80%;
+  transition: all ease 0.5s;
+  opacity: 0;
+}
+
+.card__container:hover .card__description {
+  transform: translate(0%, -50%);
+  opacity: 1;
+  color: white;
 }
